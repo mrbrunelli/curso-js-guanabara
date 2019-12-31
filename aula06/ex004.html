@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúscula é ${nome.toLowerCase()}<br>`)
+
+        //formatar numeros
+        // var n1 = 1545.5
+        // undefined
+        //     > n1
+        // 1545.5
+        //     > n1.toFixed(2)
+        // '1545.50'
+        //     > n1.toFixed(2).replace('.', ',')
+        // '1545,50'
+
+        //converter para currency
+        //     > n1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        // 'R$ 1,545.50'
+
+        //====tentei mas nao consegui====
+        // var n1 = Number(window.prompt('Digite um número: '))
+
+        // function converter(dimdim) {
+        //     dimdim.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        //     return dimdim
+        //     //return document.write(`O número convertido para REALBR é: ${n1}<br>`)
+        // }
+
+        
+        // converter(n1)
+
+        // document.write(`O valor ${n1} formatado é  <br>`)
+        // document.write(dimdim)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificador de nacionalidade</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        
+        input#txt:focus {
+            box-shadow: 3px 2px 3px 0px rgba(121, 194, 87, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    Insira seu país: <input type="text" name="txt" id="txt">
+    <input type="button" value="Consultar" onclick="verifica()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verifica() {
+            const br = 'Brasil'
+            let txt = document.querySelector('input#txt').value
+            let res = document.querySelector('div#res')
+
+            if (txt != br) {
+                res.innerHTML = `<p>País de origem <strong>${txt}</strong>, Estrangeiro!</p>`
+            } else {
+                res.innerHTML = `<p>País de origem <strong>${txt}</strong>, Brasileiro!</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
